@@ -1,0 +1,38 @@
+﻿{
+  "$schema": "https://statics.teams.microsoft.com/sdk/v1.0/manifest/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.0",
+  "version": "1.0.0",
+  "id": "adf1eced-f30b-493e-9586-e2d2dbeb6631",
+  "packageName": "com.addin365.silverstonebot",
+  "developer": {
+    "name": "AddIn365",
+    "websiteUrl": "https://www.addin365.com",
+    "privacyUrl": "https://www.addin365.com/privacy",
+    "termsOfUseUrl": "https://www.addin365.com/termsofuse"
+  },
+  "name": {
+    "short": "Silverstone Bot App"
+  },
+  "description": {
+    "short": "Silverstone bot helps to answer your questions about visiting.",
+    "full": "Silverstone bot helps to answer your questions about visiting. Our knowledge base holds many of the FAQs we get asked."
+  },
+  "icons": {
+    "outline": "https://msteams-silverstonebot.azurewebsites.net/TeamsAppPackage/Silverstone20x20.png",
+    "color": "https://msteams-silverstonebot.azurewebsites.net/TeamsAppPackage/Silverstone96x96.png"
+  },
+  "accentColor": "#60A18E",
+  "bots": [
+    {
+      "botId": "%BOT_FRAMEWORK_ID%",
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ]
+}

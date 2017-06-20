@@ -116,6 +116,9 @@
   <ItemGroup>
     <Content Include="default.htm" />
     <Content Include="Global.asax" />
+    <Content Include="Gulpfile.js" />
+    <Content Include="TeamsAppPackage\Silverstone20x20.png" />
+    <Content Include="TeamsAppPackage\Silverstone96x96.png" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -135,6 +138,10 @@
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="TeamsAppPackage\manifest.json" />
+    <Content Include="package.json" />
+    <None Include="Properties\PublishProfiles\msteams-silverstonebot - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\msteams-silverstonebot - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
