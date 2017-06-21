@@ -4,6 +4,9 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
+using Microsoft.Bot.Connector.Teams;
+using SilverstoneBot.Compose;
+using Microsoft.Bot.Connector.Teams.Models;
 
 namespace SilverstoneBot
 {
@@ -19,6 +22,22 @@ namespace SilverstoneBot
             if (activity.Type == ActivityTypes.Message)
             {
                 await Conversation.SendAsync(activity, () => new Dialogs.QnAMakerDialog());
+            }
+            else if (activity.Type == ActivityTypes.Invoke)
+            {
+                //Compose extensions come in as Invokes.  Leverage the Teams SDK helper functions
+                if (activity.IsComposeExtensionQuery())
+                {
+                    // Determine the response object to reply with
+                    var invokeResponse = new ComposeExtension(activity).CreateComposeExtensionResponse();
+
+                    // Return the response
+                    return Request.CreateResponse<ComposeExtensionResponse>(HttpStatusCode.OK, invokeResponse);
+                }
+                else
+                {
+                    // Handle other types of Invoke activities here, e.g. CardActions
+                }
             }
             else
             {

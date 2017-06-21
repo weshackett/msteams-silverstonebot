@@ -25,9 +25,60 @@
   "bots": [
     {
       "botId": "%BOT_FRAMEWORK_ID%",
+      "isNotificationOnly": false,
       "scopes": [
         "team",
         "personal"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "help",
+              "description": "Find out what I can do"
+            },
+            {
+              "title": "create",
+              "description": "Create a brand new task, just give me a title"
+            },
+            {
+              "title": "find",
+              "description": "I can help you find a task, just give me a title"
+            },
+            {
+              "title": "link",
+              "description": "Create a link to a tab, just give me the tab name"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "composeExtensions": [
+    {
+      "botId": "%BOT_FRAMEWORK_ID%",
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "commands": [
+        {
+          "id": "driversCmd",
+          "title": "Drivers",
+          "initialRun": false,
+          "description": "Search by driver name",
+          "parameters": [
+            {
+              "name": "drivers",
+              "title": "Drivers",
+              "description": "Search by driver name"
+            }
+          ]
+        }
       ]
     }
   ],

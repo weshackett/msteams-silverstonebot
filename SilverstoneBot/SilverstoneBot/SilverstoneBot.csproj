@@ -114,6 +114,17 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CarThumbnails\2016-lineup-ferrari-80x20.png" />
+    <Content Include="CarThumbnails\2016-lineup-force-india-80x20.png" />
+    <Content Include="CarThumbnails\2016-lineup-haas-80x20.png" />
+    <Content Include="CarThumbnails\2016-lineup-manor-80x20.png" />
+    <Content Include="CarThumbnails\2016-lineup-mclaren-80x20.png" />
+    <Content Include="CarThumbnails\2016-lineup-mercedes-80x20.png" />
+    <Content Include="CarThumbnails\2016-lineup-red-bull-80x20.png" />
+    <Content Include="CarThumbnails\2016-lineup-renault-80x20.png" />
+    <Content Include="CarThumbnails\2016-lineup-sauber-80x20.png" />
+    <Content Include="CarThumbnails\2016-lineup-toro-rosso-80x20.png" />
+    <Content Include="CarThumbnails\2016-lineup-williams-80x20.png" />
     <Content Include="default.htm" />
     <Content Include="Global.asax" />
     <Content Include="Gulpfile.js" />
@@ -125,6 +136,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Compose\ComposeExtension.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
     <Compile Include="Dialogs\QnAMakerAnswer.cs" />
     <Compile Include="Dialogs\QnAMakerDialog.cs" />
@@ -133,6 +145,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
