@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "moduleResolution": "classic",
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "jsx": "react",
+        "sourceMap": true
+    },
+    "include": [
+        "tabs/src/app/scripts",
+        "tabs/src/*.d.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

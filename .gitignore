@@ -240,3 +240,25 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+# Bunch of folders to Ignore
+botid.txt
+dist
+node_modules
+tabs/node_modules
+tabs/package
+tabs/dist
+obj
+bin
+
+
+/SilverstoneBot/SilverstoneBot/Tabs/src/app/scripts/theme.js.map
+/SilverstoneBot/SilverstoneBot/Tabs/src/app/scripts/theme.js
+/SilverstoneBot/SilverstoneBot/Tabs/src/app/scripts/silverstoneTab.js.map
+/SilverstoneBot/SilverstoneBot/Tabs/src/app/scripts/silverstoneTab.js
+/SilverstoneBot/SilverstoneBot/Tabs/src/app/scripts/silverstoneConfig.js.map
+/SilverstoneBot/SilverstoneBot/Tabs/src/app/scripts/silverstoneConfig.js
+/SilverstoneBot/SilverstoneBot/Tabs/src/app/scripts/client.js.map
+/SilverstoneBot/SilverstoneBot/Tabs/src/app/scripts/client.js
+/SilverstoneBot/SilverstoneBot/Tabs/src/app/server.js.map
+/SilverstoneBot/SilverstoneBot/Tabs/src/app/server.js

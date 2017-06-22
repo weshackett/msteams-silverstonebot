@@ -82,6 +82,15 @@
       ]
     }
   ],
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://msteams-silverstonebot.azurewebsites.net/dist/web/silverstoneconfig.html",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
   "permissions": [
     "identity",
     "messageTeamMembers"
